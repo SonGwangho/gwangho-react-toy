@@ -10,7 +10,7 @@ function useFetches<T>(urls: string[]) {
     const fetches = urls.map((url) =>
       fetch(url).then((res) => {
         return res.json();
-      }),
+      })
     );
     Promise.all(fetches)
       .then(setData)

@@ -1,13 +1,9 @@
 import { useEffect } from "react";
-import { useLoadingStore } from "../store/pageLoadingStore";
 
 function HomePage() {
-  const { stop } = useLoadingStore();
+  useEffect(() => {}, []);
 
-  useEffect(() => {
-    stop();
-  }, []);
-  return <div>페이지</div>;
+  return <div>메인 페이지</div>;
 }
 
 export default HomePage;
